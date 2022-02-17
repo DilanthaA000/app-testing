@@ -11,7 +11,6 @@ public class HelloWorld {
         //displaying user name with hello
         // to display value of variable use variable name
         //System.out.println("Hello,"+ username);
-
         //now we will use funtions to display user hello world to user
         show(username);
         sc.close();
