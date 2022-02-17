@@ -3,6 +3,8 @@ applications:
   health-check-type: process
   disk_quota: 1024M
   memory: 1024M
+  buildpacks:
+    - java_buildpack
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ }}'
   routes:
