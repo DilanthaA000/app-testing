@@ -1,0 +1,9 @@
+applications:
+- name: test-app
+  health-check-type: process
+  disk_quota: 1024M
+  memory: 1024M
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ }}'
+  routes:
+    - route: testAP.app.ap.assurity.cloud
