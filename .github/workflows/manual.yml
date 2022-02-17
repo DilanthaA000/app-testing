@@ -3,14 +3,6 @@ name: Test App
 on:
   workflow_dispatch:
     inputs:
-      ac-user:
-        description: "AC service account user"
-        required: true
-        default: ""
-      ac-pwd:
-        description: "AC service account password"
-        required: true
-        default: ""
       app-name:
        description: "Name of the app"
        required: true
