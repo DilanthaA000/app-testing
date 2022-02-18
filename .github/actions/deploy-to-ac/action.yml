@@ -21,7 +21,7 @@ runs:
       run: |
         ./cf login -a 'https://api.sys.ap.assurity.cloud' -u $CF_USERNAME -o 'assurity' -s ${{ inputs.space }} -p $CF_PASSWORD
         echo 'logged in'
-        ./cf push --vars-file '${{ inputs.var-file }} -b https://github.com/cloudfoundry/java-buildpack.git'
+        ./cf push --vars-file '${{ inputs.var-file }}'
       shell: bash
 
     - name: cleanup .cf
