@@ -22,6 +22,11 @@ jobs:
           filename: "vars.yml"
           name: "APP_NAME"
           value: ${{ github.event.inputs.app-name }}
+      
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
       - name: Deploy to AC
         uses: ./.github/actions/deploy-to-ac
